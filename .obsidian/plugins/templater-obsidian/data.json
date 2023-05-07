@@ -12,13 +12,8 @@
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "Config/Scripts/TemplaterScripts",
-  "enable_folder_templates": true,
-  "folder_templates": [
-    {
-      "folder": "Reference/Contacts",
-      "template": "Config/Templates/newContact.md"
-    }
-  ],
+  "enable_folder_templates": false,
+  "folder_templates": [],
   "syntax_highlighting": true,
   "enabled_templates_hotkeys": [
     ""

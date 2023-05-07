@@ -1,4 +1,5 @@
 {
+  "globalQuery": "sort by urgency  \nshow urgency  \nhide created date  \nhide start date  \nhide scheduled date\nhide recurrence rule\nhide task count",
   "globalFilter": "",
   "removeGlobalFilter": false,
   "taskFormat": "tasksPluginEmoji",
