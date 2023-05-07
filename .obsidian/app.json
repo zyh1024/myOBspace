@@ -1,7 +1,11 @@
 {
   "promptDelete": false,
   "showUnsupportedFiles": false,
-  "attachmentFolderPath": "./assets/张三",
+  "attachmentFolderPath": "./assets/2023-05-08",
   "strictLineBreaks": true,
-  "showFrontmatter": true
+  "showFrontmatter": true,
+  "newFileLocation": "current",
+  "userIgnoreFilters": [
+    "Config/"
+  ]
 }
