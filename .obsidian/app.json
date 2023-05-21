@@ -1,12 +1,11 @@
 {
   "promptDelete": false,
   "showUnsupportedFiles": false,
-  "attachmentFolderPath": "./assets/newContact",
+  "attachmentFolderPath": "./assets/2023-05-11",
   "strictLineBreaks": true,
   "showFrontmatter": true,
   "newFileLocation": "current",
   "userIgnoreFilters": [
     "Config/"
-  ],
-  "useTab": false
+  ]
 }
