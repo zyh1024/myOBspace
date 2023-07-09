@@ -12,7 +12,7 @@ tag: ${tag}
 ---
 > [!info]  
 > Name:\t${name}  
-> IMID:\t[${imid}](im:${imid})  
+> IMID:\t${imid}[](im:${imid})  
 `;
 return out;
 %>
