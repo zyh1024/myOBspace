@@ -1,6 +1,6 @@
 {
   "accentColor": "#009dff",
   "textFontFamily": "Consolas",
-  "baseFontSize": 16,
-  "theme": "obsidian"
+  "baseFontSize": 14,
+  "theme": "system"
 }

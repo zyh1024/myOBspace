@@ -1,15 +1,3 @@
----
-tag: Process
-Pid: <% tp.file.title %>
-Priority: 0
-ReviewCount: 0
-Created: <% tp.file.creation_date() %>
-Reviewed: <% tp.file.creation_date() %>
-Finished: null
-Due: null
-Stakeholder: null
----
-  
 ```dataviewjs
 const buttonMaker = () => {
     const btn = this.container.createEl('button', {"text": "Review"});
@@ -28,24 +16,3 @@ const buttonMaker = () => {
 
 buttonMaker()
 ```
-
-
-
-# Stakeholder  
-
-
-
-# Main  
-```tasks
-description includes <% tp.file.title %>
-```
-
-
-
-# Log  
-
-
-
-# Conclusion  
-
-

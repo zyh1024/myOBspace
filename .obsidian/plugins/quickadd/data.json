@@ -131,7 +131,7 @@
   "devMode": false,
   "templateFolderPath": "Config/Templates",
   "announceUpdates": false,
-  "version": "1.0.2",
+  "version": "1.2.1",
   "disableOnlineFeatures": true,
   "ai": {
     "OpenAIApiKey": "",

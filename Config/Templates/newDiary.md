@@ -1,5 +1,5 @@
 ---
-CreatedOn: <% tp.file.creation_date() %>
+Created: <% tp.file.creation_date() %>
 tag: diary
 ---
 ```dataviewjs
@@ -20,8 +20,40 @@ dv.header(6, `<< ${prevLink} | ${nextLink} >>`);
 ```
 
 
-# Old
-```tasks
-not done
-limit 10
+
+# 开始  
+
+```dataviewjs
+const buttonMaker = () => {
+    const btn = this.container.createEl('button', {"text": "ResetPriority"});
+    btn.addEventListener('click', async (evt) => {
+        evt.preventDefault();
+        const pages = dv.pages("#diary").file.tasks
+            .where(t=>t.outlinks.length>0 && t.completed == false)
+            .map(t => dv.page(t.outlinks[0]));
+        console.log(pages.length);
+        for(const page of pages){
+            console.log(page.file.path);
+            const abfile = this.app.vault.getAbstractFileByPath(page.file.path);
+            await app.fileManager.processFrontMatter(abfile, (frontmatter) => {
+                frontmatter["Priority"] = 0;
+                });
+        }
+    });
+    btn.style["color"]="red";
+    btn.style["font-weight"]="bolder";
+    btn.style.float="right";
+    return btn;
+}
+
+buttonMaker()
+```
+  
+```dataviewjs
+dv.table(["Task","Due","Priority","Reviewed","ReviewCount"],
+    dv.pages("#diary").file.tasks
+    .where(t=>t.outlinks.length>0 && t.completed == false && dv.page(t.outlinks[0]) != null)
+    .sort(t=> [dv.page(t.outlinks[0]).Priority,dv.page(t.outlinks[0]).Reviewed])
+    .map(t=>[t.text,t.due, dv.page(t.outlinks[0]).Priority,dv.page(t.outlinks[0]).Reviewed,dv.page(t.outlinks[0]).ReviewCount])
+)
 ```

@@ -1,4 +1,4 @@
 ---
-CreatedOn: <% tp.file.creation_date() %>
+Created: <% tp.file.creation_date() %>
 tag: group
 ---
