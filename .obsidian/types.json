@@ -1,0 +1,14 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Created": "datetime",
+    "Reviewed": "datetime",
+    "Finished": "datetime",
+    "Due": "datetime",
+    "Stakeholder": "text",
+    "Priority": "number",
+    "ReviewCount": "number"
+  }
+}
