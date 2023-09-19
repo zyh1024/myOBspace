@@ -7,8 +7,9 @@
     "Reviewed": "datetime",
     "Finished": "datetime",
     "Due": "datetime",
-    "Stakeholder": "text",
+    "Stakeholder": "multitext",
     "Priority": "number",
-    "ReviewCount": "number"
+    "ReviewCount": "number",
+    "IMID": "text"
   }
 }

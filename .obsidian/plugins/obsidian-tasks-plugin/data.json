@@ -6,7 +6,7 @@
   "setCreatedDate": true,
   "setDoneDate": true,
   "autoSuggestInEditor": true,
-  "autoSuggestMinMatch": 0,
+  "autoSuggestMinMatch": 1,
   "autoSuggestMaxItems": 6,
   "provideAccessKeys": true,
   "useFilenameAsScheduledDate": false,

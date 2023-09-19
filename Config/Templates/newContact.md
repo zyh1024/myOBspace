@@ -10,6 +10,7 @@ IMID: ${imid}
 alias: ${imid}, ${alias}
 tag: ${tag}
 ---
+  
 > [!info]  
 > Name:\t${name}  
 > IMID:\t${imid}[](im:${imid})  

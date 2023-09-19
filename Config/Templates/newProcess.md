@@ -29,13 +29,7 @@ const buttonMaker = () => {
 
 buttonMaker()
 ```
-
-
-
-# Stakeholder  
-
-
-
+  
 # Main  
 ```tasks
 description includes <% tp.file.title %>

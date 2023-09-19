@@ -2,6 +2,7 @@
 Created: <% tp.file.creation_date() %>
 tag: diary
 ---
+
 ```dataviewjs
 // Get list of notes ordered alphanumerically.
 const pages = dv.pages("#diary").sort((page) => page.file.path);
@@ -18,10 +19,10 @@ const nextLink = getLinkSafe(pages[currPageIndex + 1], "Latest Entry");
  
 dv.header(6, `<< ${prevLink} | ${nextLink} >>`);
 ```
-
-
-
 # 开始  
+
+
+
 
 ```dataviewjs
 const buttonMaker = () => {
