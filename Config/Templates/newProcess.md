@@ -1,13 +1,14 @@
 ---
-tag: Process
+tags:
+  - Process
 Pid: <% tp.file.title %>
 Priority: 0
 ReviewCount: 0
 Created: <% tp.file.creation_date() %>
 Reviewed: <% tp.file.creation_date() %>
-Finished: null
-Due: null
-Stakeholder: null
+Finished: 
+Due: 
+Stakeholder:
 ---
   
 ```dataviewjs
